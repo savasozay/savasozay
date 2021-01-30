@@ -59,39 +59,6 @@
 		"oAP": "/assets/images/favicon.ico",
 		"oF": 0
 		},
-	"/assets/js/app.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/min/app-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/assets/js/import/jquery.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/assets/js/import/min/jquery.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/assets/js/min/app-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/assets/js/min/min/app-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/assets/scss/.sass-cache/28b8cd9db613ea7356d83a48c5edd850e29371d4/_grid.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -5763,14 +5730,6 @@
 "hooks": [
 	],
 "manualImportLinks": {
-	"/assets/js/app.js": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "/assets/js/import/jquery.min.js",
-			"position": 0,
-			"type": 0
-			}
-		]
 	},
 "projectAttributes": {
 	"creationDate": 587089411.99064505,
