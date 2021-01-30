@@ -68,8 +68,9 @@ figure {
 	display: block;
 }
 
-
-strong { font-color: $color-secondary;}
+strong {
+	font-color: $color-secondary;
+}
 
 em {
 	color: $color-secondary;
@@ -79,8 +80,6 @@ em {
 blockquote p {
 	border-left: 1px solid $color-primary;
 }
-
-
 
 figure.about {
 	margin: $gutter 0;
@@ -107,11 +106,9 @@ figure.about {
 		min-width: 100%; min-height: 100%; width: auto; height: auto;
 		z-index: -1000; overflow: hidden; }
 
-h1, h2, h3, h4 {
-	font-weight: 500;
-}
 
 h1, h2, h3, h4, h5, h6, small {
+	font-weight: 400;
 	font-size: $fontsize-default;
 }
 
@@ -119,6 +116,7 @@ p {
 	padding: 0;
 	margin-bottom: $gutter/2;
 	max-width: 50%;
+	color: $color-secondary;
 }
 
 
@@ -187,10 +185,12 @@ header {
 				padding: 0;
 				list-style:none;
 
+				a {color: $color-secondary;}
+
 				ul {
 					margin-bottom: $gutter/2;
 					li.sub {
-					a {color: $color-secondary;}
+					a {color: $color-primary;}
 					a.active {border-bottom: 1px solid $color-secondary;}
 					a:hover {border-bottom: 1px solid $color-secondary;};
 				}

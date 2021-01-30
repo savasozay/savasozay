@@ -1,6 +1,6 @@
 Title: And this is the second one
 ----
-Date: 08.12.2011
+Details: 08.12.2011
 ----
 Text: Hello Again World!
 ----
