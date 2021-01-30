@@ -4,4 +4,4 @@
 # Ignore config files
 .sass-cache
 .codekit3
-site/config
+site/config/
