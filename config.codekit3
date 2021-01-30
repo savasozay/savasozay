@@ -9,6 +9,22 @@
 	],
 "creatorBuild": "32186",
 "files": {
+	"/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitattributes",
+		"oF": 0
+		},
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/.htaccess": {
 		"cB": 0,
 		"ft": 8192,
@@ -27,36 +43,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
-		},
-	"/assets/css/font-nb.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/assets/css/font-nb-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/assets/css/font-nitti.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/assets/css/font-nitti-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/assets/css/font.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/assets/css/font-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"/assets/css/main.css": {
 		"aP": 1,
@@ -5483,38 +5469,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/robots.txt",
-		"oF": 0
-		},
-	"/site/blueprints/default.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/site/blueprints/default.php",
-		"oF": 0
-		},
-	"/site/blueprints/error.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/site/blueprints/error.php",
-		"oF": 0
-		},
-	"/site/blueprints/home.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/site/blueprints/home.php",
-		"oF": 0
-		},
-	"/site/blueprints/site.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/site/blueprints/site.php",
 		"oF": 0
 		},
 	"/site/config/config.php": {
