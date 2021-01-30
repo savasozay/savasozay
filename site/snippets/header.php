@@ -16,7 +16,6 @@
 	<link rel="shortcut icon" href="<?php echo $site->url() ?>/assets/images/favicon.ico" />
 
 	<?php echo css('assets/css/main.css') ?>
-	<?php echo js('assets/js/min/app-min.js') ?>
 
 
 
