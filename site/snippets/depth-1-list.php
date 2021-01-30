@@ -4,7 +4,7 @@
 			<?php foreach ($page->children()->children()->flip()->visible() as $post): ?>
 			<li>
 				<a href="<?= $post->url() ?>">
-					<?= $post->title() ?>
+					<?= $post->title()->html() ?>
 				</a>
 			</li>
 		<?php endforeach ?>
