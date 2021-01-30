@@ -1,8 +1,14 @@
 # Ignore Mac system files
 .DS_store
+
 # Ignore config files
 .sass-cache
 .codekit3
 site/config/
-assets/fonts/
 config.codekit3
+
+#Ignore commercial fonts
+assets/fonts/
+
+# Ignore content files
+content/

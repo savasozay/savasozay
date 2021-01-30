@@ -1,5 +1,0 @@
-Title:
-Computation
-----
-Text:
-A computation is any type of calculation that includes both arithmetical and non-arithmetical steps and which follows a well-defined model (e.g. an algorithm).

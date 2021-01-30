@@ -1,7 +1,0 @@
-Title:
-Calendar
-
-----
-
-Text:
-Upcoming and past events.

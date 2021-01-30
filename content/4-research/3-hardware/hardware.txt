@@ -1,5 +1,0 @@
-Title:
-Hardware
-----
-Text:
-Experimental projects on small Hardware
