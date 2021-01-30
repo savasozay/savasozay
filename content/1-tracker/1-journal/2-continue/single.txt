@@ -1,6 +1,10 @@
-Title: And this is the second one
+Title:
+And this is the second one
 ----
-Details: 08.12.2011
+Details:
+08.12.2011
 ----
-Text: Hello Again World!
+Text:
+Hello world!
+
 ----

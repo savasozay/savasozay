@@ -1,7 +1,5 @@
-Title: Research
-
+Title:
+Research
 ----
-
 Text:
-
-What is this section about...
+Notes and findings

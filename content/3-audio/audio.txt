@@ -1,7 +1,5 @@
-Title: Audio
-
+Title:
+Audio
 ----
-
 Text:
-
-What is this section about...
+Audio outputs

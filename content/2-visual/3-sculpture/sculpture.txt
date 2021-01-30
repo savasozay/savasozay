@@ -1,11 +1,5 @@
-Title: Sculpture
-
+Title:
+Sculpture
 ----
-
 Text:
-
-Pareidolia (/pɛraɪˈdoʊliə/,[1] /pɛriː-/[2]) is the tendency for incorrect perception of a stimulus as an object, pattern or meaning known to the observer, such as seeing shapes in clouds, seeing faces in inanimate objects or abstract patterns, or hearing hidden messages in music.
-
-Common examples are perceived images of animals, faces, or objects in cloud formations, the Man in the Moon, the Moon rabbit, and other lunar pareidolia. The concept of pareidolia may extend to include hidden messages in recorded music played in reverse or at higher- or lower-than-normal speeds, and hearing voices (mainly indistinct) or music, in random noise such as that produced by air conditioners or fans.[3][4]
-
-Pareidolia was at one time considered a symptom of psychosis, but it is now seen as a normal human tendency.[5] It is not confined to humans. Scientists have for years taught computers to use visual clues to "see" faces and other images.
+Sculpture projects

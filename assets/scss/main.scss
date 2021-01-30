@@ -112,6 +112,11 @@ h1, h2, h3, h4, h5, h6, small {
 	font-size: $fontsize-default;
 }
 
+h2 {
+	margin-bottom: $gutter/4;
+}
+
+
 p {
 	padding: 0;
 	margin-bottom: $gutter/2;
@@ -191,7 +196,7 @@ header {
 					margin-bottom: $gutter/2;
 					li.sub {
 					a {color: $color-primary;}
-					a.active {border-bottom: 1px solid $color-secondary;}
+					a.active {border-bottom: 1px solid $color-primary;}
 					a:hover {border-bottom: 1px solid $color-secondary;};
 				}
 			}
@@ -200,12 +205,11 @@ header {
 }
 }
 
-
 section {
 	margin: 0 0 $gutter 0;
 
 	article {
-		margin: 0;
+		margin-bottom: $gutter*2;
 		text-align: justify;
 
 		ul li a img:hover {}
@@ -219,10 +223,6 @@ section {
 
 	}
 }
-
-
-
-
 
 
 /*-------------------------------------------------*/

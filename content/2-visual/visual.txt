@@ -1,7 +1,5 @@
-Title: Visual
-
+Title:
+Visual
 ----
-
 Text:
-
-What is this section about...
+Visual outputs
