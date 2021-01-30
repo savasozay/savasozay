@@ -1,0 +1,11 @@
+Title: This is my first Article
+----
+Date: 08.12.2011
+----
+Text:
+
+No, I don't hate color, on the contrary, I respect color so much as to not apply it frivolously.
+
+(image: image-1.jpg)
+
+----

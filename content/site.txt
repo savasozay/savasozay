@@ -1,0 +1,17 @@
+Title: Savas Ozay
+
+----
+
+Author: Savas Ozay
+
+----
+
+Description: I'm a graphic designer and I make things work. I move from digital to physical, from bits to atoms, and back again. 
+
+----
+
+Keywords: brand, ui, ux, graphic, design, iphone, android, web, typography, interactive, startup
+
+----
+
+Copyright: © 2001-(date: Year) (link: http://savasozay.com text: Savas Ozay)
