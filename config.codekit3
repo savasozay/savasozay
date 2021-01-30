@@ -478,6 +478,38 @@
 		"oAP": "/content/3-audio/audio.txt",
 		"oF": 0
 		},
+	"/content/4-research/1-notebook/notebook.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/content/4-research/1-notebook/notebook.txt",
+		"oF": 0
+		},
+	"/content/4-research/2-aesthetics/aesthetics.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/content/4-research/2-aesthetics/aesthetics.txt",
+		"oF": 0
+		},
+	"/content/4-research/3-hardware/hardware.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/content/4-research/3-hardware/hardware.txt",
+		"oF": 0
+		},
+	"/content/4-research/4-computation/computation.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/content/4-research/4-computation/computation.txt",
+		"oF": 0
+		},
 	"/content/4-research/research.txt": {
 		"cB": 0,
 		"ft": 8192,
@@ -5586,6 +5618,14 @@
 		"oAP": "/site/templates/about.php",
 		"oF": 0
 		},
+	"/site/templates/aesthetics.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/site/templates/aesthetics.php",
+		"oF": 0
+		},
 	"/site/templates/audio.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -5608,6 +5648,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/site/templates/calendar.php",
+		"oF": 0
+		},
+	"/site/templates/computation.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/site/templates/computation.php",
 		"oF": 0
 		},
 	"/site/templates/default.php": {
@@ -5634,12 +5682,28 @@
 		"oAP": "/site/templates/feed.php",
 		"oF": 0
 		},
+	"/site/templates/hardware.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/site/templates/hardware.php",
+		"oF": 0
+		},
 	"/site/templates/home.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/site/templates/home.php",
+		"oF": 0
+		},
+	"/site/templates/human.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/site/templates/human.php",
 		"oF": 0
 		},
 	"/site/templates/image.php": {
@@ -5674,6 +5738,22 @@
 		"oAP": "/site/templates/music.php",
 		"oF": 0
 		},
+	"/site/templates/nature.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/site/templates/nature.php",
+		"oF": 0
+		},
+	"/site/templates/notebook.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/site/templates/notebook.php",
+		"oF": 0
+		},
 	"/site/templates/photography.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -5696,6 +5776,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/site/templates/researach.php",
+		"oF": 0
+		},
+	"/site/templates/research.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/site/templates/research.php",
 		"oF": 0
 		},
 	"/site/templates/sculpture.php": {
