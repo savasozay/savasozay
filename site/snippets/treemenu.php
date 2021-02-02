@@ -11,7 +11,7 @@ if($items->count()):
   <ul>
     <?php foreach($items as $item): ?>
     <li>
-      <a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+      <?= $item->title()->html() ?>
 
       <?php
 
