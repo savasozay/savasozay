@@ -14,7 +14,7 @@ $fontsize-default: 1.8rem;
 
 $gutter: 40px;
 
-$color-background: #f0f0f0;
+$color-background: #E9E9E9;
 $color-primary: #000000;
 $color-secondary: #808080;
 $color-accent: #FF0000;
@@ -206,7 +206,7 @@ section {
 	margin: 0 0 $gutter 0;
 
 	article {
-		margin-bottom: $gutter*2;
+		margin-bottom: $gutter*4;
 		text-align: justify;
 		img {
 			// lazy retina. I'll fix this
