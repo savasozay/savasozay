@@ -1,3 +1,7 @@
 <?php snippet('header') ?>
-<?php snippet('depth-1-list') ?>
+<section class="content unit w-7-8">
+	<article>
+	<?php echo $page->text()->kirbytext() ?>
+	</article>
+</section>
 <?php snippet('footer') ?>

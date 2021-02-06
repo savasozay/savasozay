@@ -6,17 +6,16 @@
 @import 'grid';
 
 $font-primary: "Riforma", sans-serif;
-$font-secondary: "ReplicaMono", sans-serif;
 $base-line-height: 1.35;
 
-$fontsize-default: 1.8rem;
+$fontsize-default: 2.2rem;
 
 
 $gutter: 40px;
 
-$color-background: #E9E9E9;
-$color-primary: #000000;
-$color-secondary: #808080;
+$color-background: #A8A8A8;
+$color-primary: #ffffff;
+$color-secondary: #D5D5D5;
 $color-accent: #FF0000;
 $color-error: #FF0000;
 
@@ -44,7 +43,7 @@ body {
 	background: $color-background;
 	color: $color-primary;
 	font-family: $font-primary;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: $fontsize-default;
 	line-height: $base-line-height;
 	margin: 0;
@@ -77,7 +76,8 @@ em {
 }
 
 blockquote p {
-	border-left: 1px solid $color-primary;
+	border-left: 1px solid $color-secondary;
+	padding-left: $gutter;
 }
 
 
@@ -104,14 +104,18 @@ blockquote p {
 
 
 h1, h2, h3, h4, h5, h6, small {
-	font-weight: 400;
+	font-weight: 500;
 	font-size: $fontsize-default;
 }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: $color-primary;
+	text-decoration: none;
+}
+
 
 h2 {
 	margin-bottom: $gutter/4;
 }
-
 
 p {
 	padding: 0;
@@ -120,12 +124,9 @@ p {
 	color: $color-secondary;
 }
 
-
-
 figcaption {
 	display: block;
 	margin: $gutter/4 0 0 0;
-	font-weight: 400;
 	text-align:center;
 	color: $color-secondary;
 	text-transform: uppercase;
@@ -136,15 +137,13 @@ p.error {
 	a {border:none;}
 }
 
-
 a {
-	color: $color-primary;
-	text-decoration: none;
+	color: $color-secondary;
+	text-decoration: underline;
 }
 
 a:hover {
 	color: $color-primary;
-	border-bottom: 1px solid $color-primary;
 }
 
 
@@ -175,8 +174,7 @@ header {
 	nav {
 		a.external:after {content: none;}
 		h1  {
-			margin: 0 0 $gutter 0;
-			font-weight: 400;
+			margin: 0 0 $gutter*2 0;
 		}
 		ul {
 			margin: 0; padding: 0;
@@ -190,11 +188,12 @@ header {
 				a {color: $color-secondary;}
 
 				ul {
-					margin-bottom: $gutter/2;
+					margin-bottom: $gutter;
 					li.sub {
-					a {color: $color-primary;}
-					a.active {border-bottom: 1px solid $color-primary;}
-					a:hover {border-bottom: 1px solid $color-secondary;};
+					a {color: $color-primary; text-decoration: none;}
+					a.active {color: transparent;
+   						text-shadow: 0 0 4px rgba(255,255,255,0.9);}
+					a:hover {opacity:.8;};
 				}
 			}
 		}
@@ -222,7 +221,9 @@ section {
 			-moz-hyphens: auto;
 			-ms-hyphens: auto;
  			hyphens: auto;
+ 				a {text-decoration: underline;}
  			}
+
 	}
 }
 
