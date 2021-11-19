@@ -2,25 +2,49 @@
 * SETTINGS
 */
 @import 'reset';
-@import 'font';
 @import 'grid';
 
-$font-primary: "Riforma", sans-serif;
-$base-line-height: 1.35;
+@font-face {
+	font-family: 'Unica';
+	font-weight: 300;
+	font-style: normal;
+	src: url(../fonts/Unica77LL-Light.woff2) format('woff2')
+}
+@font-face {
+	font-family: 'Unica';
+	font-weight: 400;
+	font-style: normal;
+	src: url(../fonts/Unica77LL-Regular.woff2) format('woff2')
+}
+@font-face {
+	font-family: 'Unica';
+	font-weight: 500;
+	font-style: normal;
+	src: url(../fonts/Unica77LL-Medium.woff2) format('woff2')
+}
 
-$fontsize-default: 2.2rem;
 
 
+$font-primary: "Unica", sans-serif;
+
+$fontsize-default: 2rem;
+$fontsize-small: 1.6rem;
+
+$lineheight-default: 1.3;
 $gutter: 40px;
 
-$color-background: #A8A8A8;
-$color-primary: #ffffff;
-$color-secondary: #D5D5D5;
-$color-accent: #FF0000;
+$color-background: #fff;
+$color-primary: #000;
+$color-secondary: #A8A9A8;
+$color-tertiary: #4D4D4D;
+
+$color-accent: #1023D6;
 $color-error: #FF0000;
 
 
-::selection {background-color: rgba(0,0,0,0.1);}
+$border: 1px solid $color-primary;
+
+::selection {background-color: rgba(255,255,255,0.2);}
 textarea,input,input[type="text"],input[type="button"],input[type="submit"]{-webkit-appearance: none;border-radius: 0;}
 ::-webkit-input-placeholder {color:$color-secondary;}
 :-moz-placeholder {color:$color-secondary;opacity:1;}
@@ -33,7 +57,9 @@ textarea,input,input[type="text"],input[type="button"],input[type="submit"]{-web
 	text-rendering: optimizelegibility;
 	box-sizing: border-box;
 	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
 }
+
 html {
 	-webkit-font-smoothing: antialiased;
 	font-feature-settings: "kern", "liga", "case";
@@ -43,11 +69,11 @@ body {
 	background: $color-background;
 	color: $color-primary;
 	font-family: $font-primary;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: $fontsize-default;
-	line-height: $base-line-height;
-	margin: 0;
-	padding: 1vw;
+	line-height: $lineheight-default;
+	margin: $gutter/2 auto;
+	max-width: 70%;
 }
 .row {
 	margin: 0;
@@ -56,27 +82,18 @@ body {
 img {
 	margin: 0;
 	padding: 0;
-	display: block;
 	max-width: 100%;
 	height: auto;
-
-}
-figure {
-	margin: 0 0 $gutter/2 0;
-	padding: 0;
 }
 
 strong {
-	font-color: $color-secondary;
 }
 
 em {
-	color: $color-secondary;
-	font-size: $fontsize-default/2;
 }
 
 blockquote p {
-	border-left: 1px solid $color-secondary;
+	border-left: 2px solid;
 	padding-left: $gutter;
 }
 
@@ -104,126 +121,112 @@ blockquote p {
 
 
 h1, h2, h3, h4, h5, h6, small {
-	font-weight: 500;
 	font-size: $fontsize-default;
+
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	color: $color-primary;
 	text-decoration: none;
 }
 
+h1.logo {
+	text-transform: uppercase;
+	text-align: center;
+}	
 
 h2 {
-	margin-bottom: $gutter/4;
+	margin-top: $gutter/4;
 }
 
 p {
-	padding: 0;
-	margin-bottom: $gutter/2;
-	max-width: 50%;
-	color: $color-secondary;
+	padding: 0 0 $gutter/2 0;
+	margin: 0;
 }
 
 figcaption {
+	font-size: $fontsize-small;
 	display: block;
 	margin: $gutter/4 0 0 0;
-	text-align:center;
-	color: $color-secondary;
 	text-transform: uppercase;
+	text-align: center
 }
 
-p.error {
-	color: $color-background;
-	a {border:none;}
-}
 
 a {
-	color: $color-secondary;
-	text-decoration: underline;
+	color: $color-primary;
+	text-decoration: none;
 }
 
 a:hover {
+	color: $color-accent;
+}
+
+a.button {
+	max-width: 50%;
+	font-size: $fontsize-small;
+	border: none;
+	display: block;
+	margin-top: $gutter/2;
+	padding: 0;
 	color: $color-primary;
+	border-bottom: 1px solid $color-primary;
+}
+a.button:hover {
+	color: $color-accent;
+	border-bottom: 1px solid $color-accent;
 }
 
 
 hr {
-	background-color:$color-secondary;
-	opacity: .25;
 	border-width:0;
 	height:1px;
 	line-height:0;
-	margin: $gutter auto;
+	margin: $gutter*2 auto;
 	page-break-after:always;
 	text-align:center;
 }
 
-
-/*-------------------------------------------------*/
-/*
-* LEFT NAV
-*/
-
 header {
-	text-transform: capitalize;
-	margin: 0;
-	h1 {
-		a {color: $color-primary;}
-	}
-
-	nav {
-		a.external:after {content: none;}
-		h1  {
-			margin: 0 0 $gutter*2 0;
-		}
-		ul {
-			margin: 0; padding: 0;
-
-			li {
-				color: $color-secondary;
-				margin: 0;
-				padding: 0;
-				list-style:none;
-
-				a {color: $color-secondary;}
-
-				ul {
-					margin-bottom: $gutter;
-					li.sub {
-					a {color: $color-primary; text-decoration: none;}
-					a.active {color: transparent;
-   						text-shadow: 0 0 4px rgba(255,255,255,0.9);}
-					a:hover {opacity:.8;};
-				}
-			}
-		}
-	}
-}
+	margin: 0 auto;
 }
 
 section {
-	margin: 0 0 $gutter 0;
+	margin: 0 auto;
+}
 
+nav {
+	font-size: $fontsize-small;
+
+	h1 {
+		font-size: $fontsize-small;
+		a {border: none}
+	}
+	ul {	
+		list-style: none;
+			li {
+				margin-bottom: $gutter/12;
+  				a {border: none;}
+  				a.active {opacity: 0.35;}
+  			}
+  		}
+}
+
+section {
 	article {
-		margin-bottom: $gutter*4;
-		text-align: justify;
+		margin-top: $gutter*5;
+		padding: $gutter 0; 
+		figure, iframe {
+		}
 		img {
-			// lazy retina. I'll fix this
+			// lazy retina. I should fix this
 			zoom: 0.5;
+			padding: $gutter 0; 
+			margin: 0 auto;
+			display: block;
   		}
 
 
 		ul li a img:hover {}
-		ul li.workactive, ul li.archiveactive {display:none;}
-		p {
-			margin-bottom: $gutter;
-			-webkit-hyphens: auto;
-			-moz-hyphens: auto;
-			-ms-hyphens: auto;
- 			hyphens: auto;
- 				a {text-decoration: underline;}
- 			}
-
 	}
 }
 
@@ -231,93 +234,42 @@ section {
  			   img {max-width: 50%; height:auto;}
 			}
 
-/*-------------------------------------------------*/
-/*
-* AUTH
-*/
-form {
-	margin: $gutter/2 $gutter;
-}
-
-input {
-	font-family: $font-primary;
-	font-weight: 400;
-	font-size: $fontsize-default;
-	padding: $gutter/2 0 !important;
-	background: none;
-	border: none;
-	border-bottom: 2px solid $color-primary;
-	color: $color-accent;
+.news {
 	display: block;
-	width: 100%;
+	border: 1px solid $color-primary;
+	text-align: center;
+	padding: $gutter*2 0 $gutter*1.7 0;
 }
-input:focus {
-	background: 0;
-	border: none;
-	border-bottom: 2px solid $color-accent;
-	outline: 0
+.news:hover {
+	border: 1px solid $color-accent;
 }
-#button-submit {
-	font-size: $fontsize-default;
-	border: none;
-	cursor: pointer;
-	background: $color-primary;
-	color: $color-background;
-	margin: $gutter 0 0 0;
-	padding: $gutter/4 0;
+a.news {
+	text-decoration: none;
 }
-#button-submit:hover { background: $color-primary; }
-.submit:hover { color: $color-primary; }
-
-div.alert {
-	font-weight:400;
-	color: $color-background;
-	background: $color-error;
-	padding: $gutter/4 $gutter;
-	margin: $gutter/2 0 0 0;
-	line-height: 1;
-	text-transform: uppercase;
-}
-
-.scroll-to-top {
-font-size: $fontsize-default;
-color: $color-secondary;
-font-weight: 400;
-position: fixed;
-cursor: pointer;
-bottom: .5em;
-right:1em;
-display: none;
-z-index: 999;
-}
-
-
-
 
 /*-------------------------------------------------*/
 /*
-* RESPONSE
+* Responsive
 */
-// Large
-@media only screen and (min-width : 2000px) {
-	.row { max-width: 80%; }
+
+@media only screen and (max-width: 768px) {
+
+body, .newsletter {
+	max-width: 90%;
 }
 
-// Medium
-@media only screen and (max-width : 1024px) {
-	}
-@media only screen and (max-width : 800px) {
-	p {max-width: 100%;}
-}
-
-
-// Small
-@media only screen and (min-device-width : 300px) and (max-device-width : 667px) {
-	p {max-width: 100%;}
-
-
-	section {
-
+nav {
+	ul {	
+		margin: $gutter/2 0 0 0;
+		text-align: left;
+			li {
+  				padding: 0 $gutter 0 0;
+  			}
+  		}
 	}
 }
+
+
+
+
 

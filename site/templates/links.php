@@ -1,3 +1,3 @@
-<?php snippet('header') ?>
+<?php snippet('header-nomenu') ?>
 <?php snippet('profile') ?>
 <?php snippet('footer') ?>
