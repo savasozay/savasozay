@@ -13,7 +13,7 @@
 
 	<title><?php echo $site->title()->html() ?></title>
 	<meta name="ROBOTS" content="INDEX,FOLLOW">
-	<link rel="shortcut icon" href="<?php echo $site->url() ?>/assets/images/favicon.ico" />
+	<link rel="icon" type="image/png" href="<?php echo $site->url() ?>/assets/images/favicon.png" />
 
 	<?php echo css('assets/css/main.css') ?>
 
@@ -23,18 +23,25 @@
 <body>
 
 
-<header>
-	<nav>	
-		<?php $items = $pages->visible(); ?>
-			<h1><a href="<?= url() ?>">Savas Ozay</a></h1>
+<header class="row">
+<?php $items = $pages->visible(); ?>
+
+	<nav class="unit w-2-4">	
 		<ul>
-		<?php foreach($items as $item): ?>
-			<li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
-			</li>
-		<?php endforeach ?>
+			<?php foreach($items as $item): ?>
+				<li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+				</li>
+			<?php endforeach ?>
 		</ul>
 	</nav>
 
-
-
+		<h1 class="unit w-2-4 logo">
+			<a href="<?= url() ?>">Savas Ozay</a>
+		</h1>
 </header>
+
+
+
+	
+
+

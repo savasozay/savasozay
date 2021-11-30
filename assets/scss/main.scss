@@ -4,60 +4,57 @@
 @import 'reset';
 @import 'grid';
 
+
 @font-face {
-	font-family: 'Suisse';
-	font-weight: 400;
+	font-family: 'ABCDiatype';
+	font-weight: 300;
 	font-style: normal;
-	src: url(../fonts/SuisseIntl-Regular-WebXL.woff2) format('woff2')
+	src: url(../fonts/ABCDiatype-Light.woff2) format('woff2')
 }
 @font-face {
-	font-family: 'Suisse';
+	font-family: 'ABCDiatype';
+	font-weight: 400;
+	font-style: normal;
+	src: url(../fonts/ABCDiatype-Regular.woff2) format('woff2')
+}
+@font-face {
+	font-family: 'ABCDiatype';
 	font-weight: 500;
 	font-style: normal;
-	src: url(../fonts/SuisseIntl-Medium-WebXL.woff2) format('woff2')
+	src: url(../fonts/ABCDiatype-Medium.woff2) format('woff2')
 }
 @font-face {
-	font-family: 'Suisse';
-	font-weight: 700;
-	font-style: normal;
-	src: url(../fonts/SuisseIntl-Black-WebXL.woff) format('woff')
-}
-@font-face {
-	font-family: 'SuisseMono';
-	font-weight: 400;
-	font-style: normal;
-	src: url(../fonts/SuisseIntlMono-Regular.woff2) format('woff2')
-}
-@font-face {
-	font-family: 'SuisseMono';
+	font-family: 'ABCDiatype';
 	font-weight: 600;
 	font-style: normal;
-	src: url(../fonts/SuisseIntlMono-Bold.woff2) format('woff2')
+	src: url(../fonts/ABCDiatype-Bold.woff2) format('woff2')
 }
 @font-face {
-	font-family: 'SuisseTitling';
-	font-weight: 400;
+	font-family: 'ABCDiatype';
+	font-weight: 700;
 	font-style: normal;
-	src: url(../fonts/SuisseU-TitlingB-WebXL.woff2) format('woff2')
+	src: url(../fonts/ABCDiatype-Heavy.woff2) format('woff2')
 }
 
+$font-primary: "ABCDiatype", sans-serif;
 
-$font-primary: "Suisse", sans-serif;
-$font-secondary: "SuisseMono", sans-serif;
 
-$fontsize-default: 1.8rem;
-$fontsize-small: 1.4rem;
+$fontsize-default: 2.4rem;
+$fontsize-default-mobile: 2rem;
+$fontsize-small: 1.6rem;
 
-$lineheight-default: 1.4;
+$lineheight-default: 1.25;
 $gutter: 40px;
 
-$color-background: #fff;
-$color-primary: #000;
-$color-secondary: #A0A0A0;
-$color-tertiary: #EBEBEB;
+$color-background: #ffffff;
+// $color-background: #F5F5F7;
 
-$color-accent: #1023D6;
-$color-error: #FF0000;
+$color-primary: #1D1D1F;
+$color-secondary: #86868B;
+$color-tertiary: #BCBCBE;
+
+$color-accent: #0171E3;
+$color-error: #F12321;
 
 
 $border: 1px solid $color-primary;
@@ -85,34 +82,29 @@ html {
 }
 body {
 	background: $color-background;
-	color: $color-primary;
+	color: $color-secondary;
 	font-family: $font-primary;
 	font-weight: 400;
 	font-size: $fontsize-default;
 	line-height: $lineheight-default;
 	margin: $gutter/2 auto;
-	max-width: 70%;
 }
 .row {
 	margin: 0;
 }
-
 img {
 	margin: 0;
 	padding: 0;
 	max-width: 100%;
 	height: auto;
 }
-
 strong {
 }
-
 em {
-	font-family: $font-secondary;
-	font-weight: 400;
-	font-size: $fontsize-small;
-}
+	font-weight: 500;
+	color: $color-primary;
 
+}
 blockquote p {
 	border-left: 2px solid;
 	padding-left: $gutter;
@@ -146,19 +138,17 @@ h1, h2, h3, h4, h5, h6, small {
 }
 
 h2 {
-	color: $color-secondary;
+	color: $color-primary;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	color: $color-primary;
 	text-decoration: none;
 }
-
 p {
 	padding: 0 0 $gutter/2 0;
 	margin: 0;
 }
-
 figcaption {
 	font-size: $fontsize-small;
 	display: block;
@@ -166,30 +156,27 @@ figcaption {
 	text-transform: uppercase;
 	text-align: center
 }
-
-
 a {
-	color: $color-primary;
+	color: $color-secondary;
 	text-decoration: none;
 }
-
 a:hover {
-	color: $color-accent;
-}
-
-a.button {
-	max-width: 50%;
-	font-size: $fontsize-small;
-	border: none;
-	display: block;
-	margin-top: $gutter/2;
-	padding: 0;
 	color: $color-primary;
-	border-bottom: 1px solid $color-primary;
+}
+a.button {
+	display: inline-block;
+	line-height: 1;
+	margin-top: $gutter/4;
+	font-size: $fontsize-small;
+	padding: $gutter/3 $gutter/2 $gutter/2.8 $gutter/2;
+	color: $color-background;
+	border: none;
+	border-radius: 100px;
+	background: $color-primary;
 }
 a.button:hover {
-	color: $color-accent;
-	border-bottom: 1px solid $color-accent;
+	color: $color-primary;
+	background: $color-tertiary;
 }
 
 
@@ -203,35 +190,44 @@ hr {
 }
 
 header {
+	max-width: 100%;
 	margin: 0 auto;
+	padding: 0 $gutter;
 }
 
-section {
-	margin: 0 auto;
+
+h1.logo {
+	text-align: right;
+	font-size: $fontsize-small;
+	a {border: none}
+}
+h1.logo-links {
+	text-align: center;
+	font-size: $fontsize-small;
+	a {border: none}
 }
 
 nav {
-	h1 {
-		text-transform: uppercase;
-		text-align: center;
-
-		a {border: none}
-	}
+	font-size: $fontsize-small;
 	ul {	
 		list-style: none;
 			li {
+			display: inline;
+			padding-right: $gutter/5;
+
   				a {border: none;}
-  				a.active {opacity: 0.35;}
+  				a.active {color: $color-primary;}
   			}
   		}
 }
-
 section {
+	max-width: 60%;
+	margin: 0 auto;
+
 	article {
 		margin-top: $gutter*5;
 		padding: $gutter 0; 
-			a:after {content: " ↗";}
-			figure a:after {content:none;}
+			
 			figure, iframe {
 			}
 			img {
@@ -270,19 +266,16 @@ a.news {
 
 @media only screen and (max-width: 1024px) {
 
-body, .newsletter {
+body {font-size: $fontsize-default-mobile;}
+section {max-width: 90%;}
+h1.logo {text-align: left;}
+header {
 	max-width: 90%;
+	margin: 0 auto;
+	padding: 0 $gutter/2;
 }
 
-nav {
-	ul {	
-		margin: $gutter/2 0 0 0;
-		text-align: left;
-			li {
-  				padding: 0 $gutter 0 0;
-  			}
-  		}
-	}
+
 }
 
 

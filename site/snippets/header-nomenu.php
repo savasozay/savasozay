@@ -13,7 +13,7 @@
 
 	<title><?php echo $site->title()->html() ?></title>
 	<meta name="ROBOTS" content="INDEX,FOLLOW">
-	<link rel="shortcut icon" href="<?php echo $site->url() ?>/assets/images/favicon.ico" />
+	<link rel="icon" type="image/png" href="<?php echo $site->url() ?>/assets/images/favicon.png" />
 
 	<?php echo css('assets/css/main.css') ?>
 
@@ -23,9 +23,11 @@
 <body>
 
 
+
 <header>
-	<nav>	
-		<?php $items = $pages->visible(); ?>
-			<h1><a href="<?= url() ?>">Savas Ozay</a></h1>
-	</nav>
+<?php $items = $pages->visible(); ?>
+		<h1 class="logo-links">
+			<a href="<?= url() ?>">Savas Ozay</a>
+		</h1>
 </header>
+
