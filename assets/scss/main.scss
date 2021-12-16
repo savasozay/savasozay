@@ -35,8 +35,14 @@
 	font-style: normal;
 	src: url(../fonts/ABCDiatype-Heavy.woff2) format('woff2')
 }
+@font-face {
+	font-family: 'NBAkademie';
+	font-weight: 400;
+	font-style: normal;
+	src: url(../fonts/nb_akademie_regular-webfont.woff2) format('woff2')
+}
 
-$font-primary: "ABCDiatype", sans-serif;
+$font-primary: "NBAkademie", sans-serif;
 
 
 $fontsize-default: 2.4rem;
@@ -73,6 +79,7 @@ textarea,input,input[type="text"],input[type="button"],input[type="submit"]{-web
 	box-sizing: border-box;
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -81,7 +88,9 @@ html {
 	font-size: 62.5%;
 }
 body {
-	background: $color-background;
+	
+	// background: $color-background;
+	background: #ff0000;
 	color: $color-secondary;
 	font-family: $font-primary;
 	font-weight: 400;

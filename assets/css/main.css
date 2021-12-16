@@ -190,7 +190,8 @@ textarea, input, input[type="text"], input[type="button"], input[type="submit"] 
   text-rendering: optimizelegibility;
   box-sizing: border-box;
   -webkit-text-size-adjust: none;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -198,7 +199,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background: #ffffff;
+  background: #FBFBFB;
   color: #86868B;
   font-family: "ABCDiatype", sans-serif;
   font-weight: 400;
@@ -230,7 +231,7 @@ blockquote p {
   /* 16/9 ratio */
   height: 0;
   overflow: hidden;
-  background: #ffffff; }
+  background: #FBFBFB; }
 
 .video embed, .video iframe, .video object {
   position: absolute;
@@ -284,7 +285,7 @@ a.button {
   margin-top: 10px;
   font-size: 1.6rem;
   padding: 13.33333px 20px 14.28571px 20px;
-  color: #ffffff;
+  color: #FBFBFB;
   border: none;
   border-radius: 100px;
   background: #1D1D1F; }
