@@ -1,5 +1,5 @@
-<section class="profile">
-	<article class="linklist">
+<section>
+	<article class="projects">
 		<?php echo $page->text()->kirbytext() ?>
 	</article>
 </section>

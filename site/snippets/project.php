@@ -1,15 +1,5 @@
-<section class="content unit w-8-8">
-	<?php foreach ($page->children()->flip()->visible() as $post): ?>
-	<article>
-		<h1><a href="<?= $post->url() ?>"><?= $post->title()->html() ?></a></h1>
-		<h2><?= $post->details()->html() ?></h2>
-
-		<?php echo $post->text()->kirbytext() ?>
-
+<section>
+	<article class="project">
+		<?php echo $page->text()->kirbytext() ?>
 	</article>
-
-	<?php endforeach ?>
 </section>
-
-
-
